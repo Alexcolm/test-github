@@ -1,0 +1,17 @@
+import psycopg2
+
+
+def db_connet():
+   conexion1 = psycopg2.connect(user="postgres", 
+                                password="vosa45M5",
+                                host="localhost",
+                                port="5432",
+                                database="articulos1")   
+   return conexion1 
+
+def modificar_dato(id_articulos,productos):
+    conexion1 = db_connet()
+    cursor = conexion1.cursor()
+    sql = "UPDATE articulos SET  id_articulos = %s, productos = %s WHERE id = %s"
+    cursor.execute(sql, (*id_articulos, productos))
+    conexion1.commit()
