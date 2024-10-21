@@ -1,0 +1,3 @@
+def login(usuario,contrsenia):
+	print(usuario)
+	print(contrasenia)
