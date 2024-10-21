@@ -1,3 +1,4 @@
+import consulta
 import login
 from curs import db_connect 
 print("hello") 
