@@ -1,0 +1,10 @@
+import psycopg2
+
+
+def db_connet():
+   conexion1 = psycopg2.connect(user="postgres", 
+                                password="vosa45M5",
+                                host="localhost",
+                                port="5432",
+                                database="articulos1")   
+   return conexion1 

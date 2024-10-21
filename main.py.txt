@@ -1,3 +1,4 @@
+from curs import db_connect 
 print("hello") 
 #agregar login
 #agregar bd
